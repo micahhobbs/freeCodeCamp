@@ -6,55 +6,38 @@
     <title>Gavin Belson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
-
-<!-- 
-User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
-
-User Story #2: I should see an element with a corresponding id="title" which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
-
-User Story #3: I should see a div element with a corresponding id="img-div".
-
-User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
-
-User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.
-
-User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
-
-User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
-
-User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
- -->
 <body>
+    <div id="main">
 
-    <main>
-
-        <header>
-            <div>
-                <h1 id="title">Gavin Belson </h1>
-            </div>
-                <img id="hooliLogo" src="https://botw-pd.s3.amazonaws.com/styles/logo-original-577x577/s3/032018/untitled-1_402.png?jE55z5k8TLCYRuash4OvNAA5c7zSvs_Y&itok=jshT6m-f" alt="Hooli logo image">
-        </header>
-
+        <div id="title">Gavin Belson</div>
+        
         <div id="img-div">
-            <img id="img" src="https://s3-us-west-2.amazonaws.com/assets.coderag.prd/wp-content/uploads/2017/06/coderag_s4_banners_gavin.jpg.png" alt="mug shot of gavin belson">
-        </div>      
-
-        <div id="tribute-info">
-            <h2>Background</h2>
-            <p>Gavin Belson is the Chief Innovation Officer of Hooli, a huge tech company in <a id="tribute-link "href="https://en.wikipedia.org/wiki/Silicon_Valley" target="_blank">Silicon Valley</a> that seemingly has its hands in everything but specifically does “targeted search and cross-platform verticals.” He has a long-standing rivalry with Peter Gregory, which only fuels his desire to acquire Richard’s algorithm. For Gavin, bigger is better -- and money is no object.</p>
-
-            <h2>Latest News</h2>
-            <p>After heroically negotiating “Action” Jack Barker’s release from the Chinese factory where he was held hostage, Gavin Belson has pulled off another coup closer to home, reclaiming the CEO spot he lost to Barker only months ago. The Hooli Board announced that they are “thrilled to have the talents of our founder back at the helm.” Belson added, “And it’s good to be back. I’m also returning as the Chairman of the Board, so I wrote that last statement.”</p>
-
-            <p>Now-exited Barker faced enormous challenges after his recent Hooli-Con keynote fail, where HooliPhones across the venue violently exploded during his grand finale with once-hot- now-not wunderkind Keenan Feldspar. Barker made an admirable, if misguided, attempt to counter the tragedy with a total recall and replacement of HooliPhones, which is why he was visiting the Hooli factory in China when the workers took him hostage, demanding improved working conditions and wages.</p>
-            
-            <p>While Barker fumbled through leading one of the greatest tech companies the Valley has ever seen, Belson’s whereabouts were unknown. It seems, however, his need to focus on “spiritual wellness and family” has been satiated. Belson told the press, “Hooli can always count on me to go the distance.”</p>
-
-            <h2>Memorable Quote</h2>
-            <p> I don't know about you people, but I don't want to live in a world where someone else makes the world a better place better than we do."</p>
+            <figure>
+                <img id="image" src="https://s3-us-west-2.amazonaws.com/assets.coderag.prd/wp-content/uploads/2017/06/coderag_s4_banners_gavin.jpg.png" alt="mug shot of gavin belson">
+                <figcaption id="img-caption">The one and only, Gavin Belson</figcaption>
+            </figure>
         </div>
-    </main>
+
+        <main>
+            <div id="tribute-info">
+                <h2>Background</h2>
+                <p>Gavin Belson is the Chief Innovation Officer of Hooli, a huge tech company in <a id="tribute-link" href="https://en.wikipedia.org/wiki/Silicon_Valley" target="_blank">Silicon Valley</a> that seemingly has its hands in everything but specifically does “targeted search and cross-platform verticals.” He has a long-standing rivalry with Peter Gregory, which only fuels his desire to acquire Richard’s algorithm. For Gavin, bigger is better -- and money is no object.</p>
+    
+                <h2>Latest News</h2>
+                <p>After heroically negotiating “Action” Jack Barker’s release from the Chinese factory where he was held hostage, Gavin Belson has pulled off another coup closer to home, reclaiming the CEO spot he lost to Barker only months ago. The Hooli Board announced that they are “thrilled to have the talents of our founder back at the helm.” Belson added, “And it’s good to be back. I’m also returning as the Chairman of the Board, so I wrote that last statement.”</p>
+    
+                <p>Now-exited Barker faced enormous challenges after his recent Hooli-Con keynote fail, where HooliPhones across the venue violently exploded during his grand finale with once-hot- now-not wunderkind Keenan Feldspar. Barker made an admirable, if misguided, attempt to counter the tragedy with a total recall and replacement of HooliPhones, which is why he was visiting the Hooli factory in China when the workers took him hostage, demanding improved working conditions and wages.</p>
+                
+                <p>While Barker fumbled through leading one of the greatest tech companies the Valley has ever seen, Belson’s whereabouts were unknown. It seems, however, his need to focus on “spiritual wellness and family” has been satiated. Belson told the press, “Hooli can always count on me to go the distance.”</p>
+    
+                <h2>Memorable Quote</h2>
+                <p> I don't know about you people, but I don't want to live in a world where someone else makes the world a better place better than we do."</p>
+            </div>
+        </main>
+    </div>
+    
 </body>
 </html>
