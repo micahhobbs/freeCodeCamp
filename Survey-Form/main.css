@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: steelblue;
+    font-family: roboto, sans-serif;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 60%;
+    background: white;
+    color: lightslategray;
+}
+
+#title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.input-field {
+    height: 20px;
+    width: 280px;
+    max-width: 80%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+
+  }
+
+  #age {
+      width: 25px;
+  }
+
+  p {
+      text-align: center;
+  }
+
+  #button {
+      text-align: center;
+  }
