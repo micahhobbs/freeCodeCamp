@@ -12,8 +12,8 @@
 <body>
 
     <div id="container">
-        <h1 id="title">{{Something}} Survey</h1>
-        <p id="description">Help us improve {{something}}</p>
+        <h1 id="title">Mike's Strength & Conditioning Survey</h1>
+        <p id="description">Help us improve our services and training facilities</p>
         
         <form action="" id="survey-form">
             <div class="rowTab">
@@ -36,16 +36,61 @@
 
             <div class="rowTab">
                 <div class="labels">
-                    <label for="age">* Age: </label>
+                    <label for="number">* Age: </label>
                 </div>
                 <div class="rightTab">
-                    <input type="number" name="age" id="age" class="input-field" required>
+                    <input type="number" name="age" id="number" class="input-field" required>
                 </div>
             </div>  
 
 
             <div class="rowTab">
-                <input type="button" value="SUBMIT" id="button">
+                <div class="labels">
+                    <label for="fav-exercise">Whats your favourite exercise?</label>
+                </div>
+                <div class="rightTab">
+                    <select name="fav-exercise" id="fav-exercise" class="dropdown">
+                        <option value="squat">Squat</option>
+                        <option value="bench">Bench</option>
+                        <option value="deadlift">Deadlift</option>
+                    </select>
+                </div>
+            </div>  
+
+            <!-- Radio button section -->
+
+            <!-- <div class="rowTab">
+                <div class="labels">
+                    <label for="recommendation">How likely are you to recommend us to someone eles?</label>
+                </div>
+                <div class="rightTab">
+                    <input type="radio" name="recommendation" id="recommendation">Highly
+                </div>
+                <div class="rightTab">
+                    <input type="radio" name="recommendation" id="recommendation">Neutral
+                </div>
+                <div class="rightTab">
+                    <input type="radio" name="recommendation" id="recommendation">Unlikely
+                </div>
+            </div> -->
+
+
+            <!-- Checkbox section -->
+
+
+
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comment">Any further comments?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea cols="40" rows="5" name="comment" id="comment" class="input-field"></textarea>
+                </div>
+            </div>  
+
+            <div class="rowTab">
+                <button type="submit" id="sub-but">SUBMIT</button>
             </div>
        
         </form>

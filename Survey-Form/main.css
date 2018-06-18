@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: steelblue;
+    background: limegreen;
     font-family: roboto, sans-serif;
 }
 
@@ -10,6 +10,7 @@ body {
     width: 60%;
     background: white;
     color: lightslategray;
+    border-radius: 10px;
 }
 
 #title {
@@ -44,14 +45,22 @@ body {
 
   }
 
-  #age {
-      width: 25px;
+  .dropdown {
+      width: 80px;
+      height: 30px;
+      padding: 5px;
+      margin: 10px;
+  }
+
+  #number {
+      width: 40px;
   }
 
   p {
       text-align: center;
   }
 
-  #button {
-      text-align: center;
+  #sub-but {
+      margin: auto;
+      display: block;
   }
