@@ -15,41 +15,41 @@
         <h1 id="title">Mike's Strength & Conditioning Survey</h1>
         <p id="description">Help us improve our services and training facilities</p>
         
-        <form action="" id="survey-form">
+        <form id="survey-form">
             <div class="rowTab">
                 <div class="labels">
-                    <label for="name">* Name: </label>
+                    <label for="name" id="name-label">* Name: </label>
                 </div>
                 <div class="rightTab">
-                    <input type="text" name="name" id="name" class="input-field" required>
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
                 </div>
              </div>  
 
              <div class="rowTab">
                 <div class="labels">
-                    <label for="email">* Email: </label>
+                    <label for="email" id="email-label">* Email: </label>
                 </div>
                 <div class="rightTab">
-                    <input type="email" name="email" id="email" class="input-field" required>
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
                 </div>
             </div>  
 
             <div class="rowTab">
                 <div class="labels">
-                    <label for="number">* Age: </label>
+                    <label for="number" id="number-label">* Age: </label>
                 </div>
                 <div class="rightTab">
-                    <input type="number" name="age" id="number" class="input-field" required>
+                    <input type="number" name="age" id="number" class="input-field" placeholder="Age" min="1" max="100" required>
                 </div>
             </div>  
 
 
             <div class="rowTab">
                 <div class="labels">
-                    <label for="fav-exercise">Whats your favourite exercise?</label>
+                    <label for="dropdown">Whats your favourite exercise?</label>
                 </div>
                 <div class="rightTab">
-                    <select name="fav-exercise" id="fav-exercise" class="dropdown">
+                    <select name="fav-exercise" id="dropdown">
                         <option value="squat">Squat</option>
                         <option value="bench">Bench</option>
                         <option value="deadlift">Deadlift</option>
@@ -58,26 +58,54 @@
             </div>  
 
             <!-- Radio button section -->
-
-            <!-- <div class="rowTab">
+            <div class="rowTab">
                 <div class="labels">
-                    <label for="recommendation">How likely are you to recommend us to someone eles?</label>
+                    <p>When do you train?</p>
                 </div>
                 <div class="rightTab">
-                    <input type="radio" name="recommendation" id="recommendation">Highly
+                    <div>
+                        <input type="radio" name="train-time" id="train-morning" value="morning">
+                        <label for="train-morning">Morning</label>
+                    </div>
+                   <div>
+                        <input type="radio" name="train-time" id="train-day" value="day">
+                        <label for="train-day">During the day</label>
+                   </div>
+                   <div>
+                        <input type="radio" name="train-time" id="train-evening" value="evening">
+                        <label for="train-evening">Evening</label>                   
+                   </div> 
                 </div>
-                <div class="rightTab">
-                    <input type="radio" name="recommendation" id="recommendation">Neutral
-                </div>
-                <div class="rightTab">
-                    <input type="radio" name="recommendation" id="recommendation">Unlikely
-                </div>
-            </div> -->
+            </div>  
 
 
             <!-- Checkbox section -->
-
-
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="equipment">
+                        Pieces of equipment that you would like to see in the gym (Check all that apply)
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="equipment">
+                        <li class="checkbox">
+                            <label>
+                                <input type="checkbox" name="equipment" value="GHD" class="user-ratings">Glute Ham Developer
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input type="checkbox" name="equipment" value="hyper-extension" class="user-ratings">Hyper Extension
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input type="checkbox" name="equipment" value="belt-squat" class="user-ratings">Belt Squat
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
 
             <div class="rowTab">
@@ -90,7 +118,7 @@
             </div>  
 
             <div class="rowTab">
-                <button type="submit" id="sub-but">SUBMIT</button>
+                <button type="submit" id="submit">SUBMIT</button>
             </div>
        
         </form>
