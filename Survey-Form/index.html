@@ -34,6 +34,7 @@
                 </div>
             </div>  
 
+            <!-- Dropdown menu -->
             <div class="rowTab">
                 <div class="labels">
                     <label for="number" id="number-label">* Age: </label>
@@ -60,21 +61,29 @@
             <!-- Radio button section -->
             <div class="rowTab">
                 <div class="labels">
-                    <p>When do you train?</p>
+                    <label for="train-time">When do you train?</label>
                 </div>
                 <div class="rightTab">
-                    <div>
-                        <input type="radio" name="train-time" id="train-morning" value="morning">
-                        <label for="train-morning">Morning</label>
-                    </div>
-                   <div>
-                        <input type="radio" name="train-time" id="train-day" value="day">
-                        <label for="train-day">During the day</label>
-                   </div>
-                   <div>
-                        <input type="radio" name="train-time" id="train-evening" value="evening">
-                        <label for="train-evening">Evening</label>                   
-                   </div> 
+                    <ul>
+                        <li class="radio">
+                            <label>
+                                Morning
+                                <input type="radio" name="train-time" value="morning" class="train-time">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                During the day
+                                <input type="radio" name="train-time" value="day" class="train-time">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Evening
+                                <input type="radio" name="train-time" value="evening" class="train-time">
+                            </label>
+                        </li>
+                    </ul>
                 </div>
             </div>  
 
@@ -83,34 +92,34 @@
             <div class="rowTab">
                 <div class="labels">
                     <label for="equipment">
-                        Pieces of equipment that you would like to see in the gym (Check all that apply)
+                        What other equipment would you like to see in the gym? (Check all that apply)
                     </label>
                 </div>
                 <div class="rightTab">
                     <ul id="equipment">
                         <li class="checkbox">
                             <label>
-                                <input type="checkbox" name="equipment" value="GHD" class="user-ratings">Glute Ham Developer
+                                <input type="checkbox" name="equipment" value="GHD" class="equip-pref">Glute Ham Developer
                             </label>
                         </li>
                         <li class="checkbox">
                             <label>
-                                <input type="checkbox" name="equipment" value="hyper-extension" class="user-ratings">Hyper Extension
+                                <input type="checkbox" name="equipment" value="hyper-extension" class="equip-pref">Hyper Extension
                             </label>
                         </li>
                         <li class="checkbox">
                             <label>
-                                <input type="checkbox" name="equipment" value="belt-squat" class="user-ratings">Belt Squat
+                                <input type="checkbox" name="equipment" value="belt-squat" class="equip-pref">Belt Squat
                             </label>
                         </li>
                     </ul>
                 </div>
             </div>
 
-
+            <!-- Submit button -->
             <div class="rowTab">
                 <div class="labels">
-                    <label for="comment">Any further comments?</label>
+                    <label for="comment">Any other comments?</label>
                 </div>
                 <div class="rightTab">
                     <textarea cols="40" rows="5" name="comment" id="comment" class="input-field"></textarea>

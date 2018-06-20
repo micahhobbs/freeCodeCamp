@@ -7,11 +7,12 @@ body {
 #container {
     margin: 0 auto;
     max-width: 700px;
-    min-width: 300px;
-    width: 60%;
+    min-width: 370px;
+    width: 80%;
     background: white;
     color: lightslategray;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 #title {
@@ -23,7 +24,7 @@ body {
     display: inline-block;
     text-align: right;
     width: 40%;
-    padding: 5px;
+    padding: 5px 5px 5px 30px;
     vertical-align: top;
     margin-top: 10px;
 }
@@ -46,6 +47,11 @@ body {
 
   }
 
+  .train-time, .equip-pref {
+      float: left;
+      margin-top: 5px;
+  }
+
   #dropdown {
       width: 80px;
       height: 30px;
@@ -65,12 +71,39 @@ body {
       display: block;
   }
 
-  .checkbox {
+  .checkbox, .radio {
       list-style: none;
+  }
+
+  ul {
+      padding-left: 5px;
   }
 
   #submit {
       margin: auto;
       display: block;
       width: 100px;
+      background-color: #e7e7e7; 
+      color: black;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+  }
+
+  @media screen and (max-width: 520px) {
+    .labels {
+      width: 100%;
+      text-align: left;
+      padding: 5px;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
   }
