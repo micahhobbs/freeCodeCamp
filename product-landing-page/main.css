@@ -4,40 +4,28 @@ body {
 
 #container {
     background-color: steelblue;
-    width: 100%;
-    /* margin: 0 auto; */
     display: grid;
-    grid-template-columns: 100%
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "header header header"
-    "about about about"
-    "price price price"
-    "contact contact contact"
-    "footer footer footer";
+    grid-template-rows: auto 1fr 1fr auto;
+    height: 100%;
+   
 }
 
 #header {
-    grid-area: header;
-    background-color: blue;
+    
 }
 
 #about {
-    grid-area: about;
-    background-color: orange
+
 }
 
 #price {
-    grid-area: price;
-    background-color: pink;
+
 }
 
 #contact {
-    grid-area: contact;
-    background-color: brown;
+
 }
 
 #footer {
-    grid-area: footer;
-    background-color: palegreen;
+
 }
