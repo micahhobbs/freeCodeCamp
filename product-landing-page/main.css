@@ -46,6 +46,7 @@ body {
     height: 2px;
     width: 2em;
     border-radius: 2px;
+    position: relative;
 }
 
 .nav-toggle-label span::before,
@@ -69,7 +70,9 @@ nav {
     left: 0;
     background: var(--background-color);
     width: 100%;
-    display: none;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -88,6 +91,8 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover{
@@ -95,27 +100,17 @@ nav a:hover{
 }
 
 .nav-toggle:checked ~ nav {
-    display: block;
+    transform: scale(1, 1)
 }
 
-
-
-/* #header {
-    
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 300ms;
 }
 
-#about {
-
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        di  splay: none;
+    }
 }
 
-#price {
-
-}
-
-#contact {
-
-}
-
-#footer {
-
-} */
