@@ -121,6 +121,55 @@ nav a:hover{
     margin-top: 80.8667px;;
 }
 
+/* 
+Hero Image
+*/
+
+.opener h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.opener-hero {
+    text-align: center;
+}
+
+.hero-img {
+    height: 30%;
+    width: 30%;
+}
+
+
+
+
+/* 
+Feature section
+*/
+
+.prod-features {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.feature {
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.feat-img {
+
+    min-width: 40%;
+    min-height: 60%;
+
+    max-width: 30%;
+    max-height: 50%;
+}
+
 
 /* 
 Pricing section
@@ -171,8 +220,9 @@ Pricing section
 
 
 .pricing {
-    max-width:750px;
+    max-width: 850px;
     margin: 0 auto;
+    padding: 30px 0;
     display: flex;
     align-items: center;
 }
@@ -181,13 +231,11 @@ Pricing section
     display: flex;
     flex: 1;
     background: rgba(255, 255, 255, 0.2);
-    margin: 20px;
+    margin: 5px;
     padding: 20px;
     border-radius: 4px;
     text-align: center;
-    flex: 1;
     flex-wrap: wrap;
-    width: 400px;
 }
 
 .option > * {
@@ -202,12 +250,6 @@ Pricing section
 .cta:hover {
     transform: scale(1.1);
 }
-
-/*
-Flexbox 
-*/
-
-
 
 /* 
 Contact section
@@ -246,14 +288,14 @@ form {
     padding: .5em;
     width: 50%;
     font-size: 1.2em;  
-    background-color: lightgray;
-    border: 1px solid gray;
+    background-color: var(--background-color);
+    color: white;
+    border: 1px solid var(--background-color);
+    border-radius: 4px;
 }
 
 .button:hover {
     transform: scale(1.1);
-    color: white;
-    background-color: var(--background-color);
 }
 
 
@@ -321,6 +363,16 @@ form {
     
     .pricing > * {
         order: 999;
+
     }
+
+    .pricing .option {
+        margin: 35px;
+    }
+
+    .cta:hover {
+        transform: scale(1.025);
+    }
+
 }
 

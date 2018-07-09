@@ -17,9 +17,9 @@
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a href="#">Features</a></li>
-                    <li class="nav-link"><a href="#">Price</a></li>
-                    <li class="nav-link"><a href="#">Contact</a></li>
+                    <li class="nav-link"><a href="#features">Features</a></li>
+                    <li class="nav-link"><a href="#pricing">Price</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <label for="nav-toggle" class="nav-toggle-label">
@@ -28,16 +28,36 @@
         </header>
 
         <section class="opener">
-            <h1>Opener</h1>
+            <div class="opener-hero">
+                <img class="hero-img" src="np_hero_195465_FFFFFF.png" alt="hero image">
+                <h2>The greatest product ever</h2>
+            </div>
         </section>
 
-        <section class="features">
-            <h1>Features</h1>
+        <section class="prod-features" id="features">
+            <div class="feature feature1">
+                <img class="feat-img"
+                src="np_featured_1197008_FFFFFF.png" alt="awesome feature">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+           
+            <div class="feature feature2">
+                <img class="feat-img" src="np_featured_739228_FFFFFF.png" alt="killer feature">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            
+            <div class="feature feature3">
+                <img class="feat-img" src="np_tag_1034088_FFFFFF.png" alt="best feature">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="feature feature4">
+                <img class="feat-img" src="np_call-waiting_1537213_FFFFFF.png" alt="best feature">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </section>
 
-
-
-        <section class="pricing"> 
+        <section class="pricing" id="pricing"> 
             <div class="option option1">
                 <h2>Option 1</h2>
                 <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -77,7 +97,7 @@
 
 
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="sign-up-title">For the latest news</h2>
             <form action="">
                 <input type="email" name="email" class="email" placeholder="YOUR EMAIL ADDRESS">
