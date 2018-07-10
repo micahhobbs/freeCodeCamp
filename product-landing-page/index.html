@@ -6,13 +6,13 @@
     <title>Product Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</head> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
 <body>
     <div id="container">
 
         <header id="header">
-            <!-- <img id="header-img" src="np_logo_218075_000000.png" alt="logo"> -->
+            <img id="header-img" src="url(https://cdn.dribbble.com/users/84839/screenshots/1669946/free-hero-image.jpg)" alt="logo">
             <h1 class="logo">Product</h1>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav id="nav-bar">
@@ -99,14 +99,17 @@
 
         <section class="contact" id="contact">
             <h2 class="sign-up-title">For the latest news</h2>
-            <form action="">
-                <input type="email" name="email" class="email" placeholder="YOUR EMAIL ADDRESS">
-                <input type="button" class="button" value="SUBMIT">
+            <form id="form" action="">
+                <input type="email" name="email" class="email" id="email" placeholder="YOUR EMAIL ADDRESS">
+                <input type="button" class="button" id="submit" value="SUBMIT">
             </form>
         </section>
 
         <footer>
-            <h2>Footer</h2>
+            <div class="footer-content">
+                <p>This is just fake product landing page</p>
+                <p> Created for <a class="link" href="https://www.freecodecamp.com/">FreeCodeCamp</a> and made with ❤️ by <a class="link" href="https://www.micahthobbs.com/">Micah Hobbs</a></p>
+            </div>
         </footer>
 
     </div>
