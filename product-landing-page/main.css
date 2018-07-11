@@ -143,15 +143,14 @@ Hero Image
     width: 30%;
 }
 
-
-
-
 /* 
 Feature section
 */
 
 .prod-features {
     display: flex;
+    flex: 1;
+    flex-direction: row;
     align-items: center;
     margin: 50px auto;
     max-width: 1000px;
@@ -163,22 +162,19 @@ Feature section
     color: white;
     flex-wrap: wrap;
     flex: 1;
+    margin: 25px;
 }
 
 .feat-img {
-
     min-width: 40%;
     min-height: 60%;
-
     max-width: 30%;
     max-height: 50%;
 }
 
-
 /* 
 Pricing section
 */
-
 
 .option ul {
     margin: 0;
@@ -310,7 +306,7 @@ footer {
     color: white;
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center; 
-    padding: 20px;
+    padding: 2 0px;
     margin-top: 50px;
 }
 
@@ -404,5 +400,12 @@ footer {
         transform: scale(1.025);
     }
 
+    .prod-features {
+        flex-direction: column;
+    }
+
+    .feature {
+        padding-bottom: 50px;
+    }
 }
 
