@@ -157,10 +157,12 @@ Feature section
 }
 
 .feat-img {
-    min-width: 40%;
-    min-height: 60%;
-    max-width: 30%;
-    max-height: 50%;
+    width: 40%;
+    height: 60%;
+    flex-shrink: 0;
+    /* max-width: 30%;
+    max-height: 50%; */
+
 }
 
 /* 
@@ -373,7 +375,6 @@ footer {
 
 }
 
-/* ??? */
 @media all and (max-width: 800px) {
 
     .pricing {
@@ -395,10 +396,17 @@ footer {
 
     .prod-features {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .feature {
         padding-bottom: 50px;
+        max-width: 70%;
     }
+
+    iframe {
+        width: 70%;
+        height: 70%;
+     }
 }
 
