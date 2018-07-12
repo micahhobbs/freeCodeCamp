@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 :root {
-    --background-color: rgba(85, 214, 170, .85)
+    --background-color: rgb(85, 214, 170)
 }
 
 *, *::before, *::after {
@@ -122,26 +122,18 @@ nav a:hover{
 
 
 .opener {
-    margin-top: 80.8667px;;
-}
-
-/* 
-Hero Image
-*/
-
-.opener h2 {
-    color: white;
-    text-transform: uppercase;
-}
-
-.opener-hero {
+    margin-top: 85px;
     text-align: center;
 }
 
-.hero-img {
-    height: 30%;
-    width: 30%;
+/* 
+Video 
+*/
+
+iframe {
+   margin-top: 90px; 
 }
+
 
 /* 
 Feature section
@@ -149,10 +141,9 @@ Feature section
 
 .prod-features {
     display: flex;
-    flex: 1;
     flex-direction: row;
     align-items: center;
-    margin: 50px auto;
+    margin: 40px auto;
     max-width: 1000px;
     padding: 20px;
 }
@@ -222,7 +213,7 @@ Pricing section
 .pricing {
     max-width: 850px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 5px 0;
     display: flex;
     align-items: center;
 }
@@ -263,6 +254,8 @@ Contact section
     text-align: center;
     height: 200px;
     text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .sign-up-title {
