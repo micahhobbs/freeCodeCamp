@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  font-family: 'Roboto'
+}
+
+#nav-bar {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: lightgray;
+}
+
+#topic {
+  color: white;
+}
+
+.nav-link {
+  list-style: none;
+
+}
+
+#main-doc {
+  margin-left: 250px;
+}
+
+code {
+  background: lightgray;
+}
+
+  
