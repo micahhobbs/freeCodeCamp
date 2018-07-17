@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
     <div class="container">
-        <nav id="nav-bar">
+        <nav id="navbar">
             <header class="topic-title">JavaScipt Guide</header>
             <ul>
-                <li class="nav-link"><a class="test" href=#>Introduction</a></li>
-                <li class="nav-link"><a class="test" href=#>Grammer and types</a></li>
-                <li class="nav-link"><a class="test" href=#>Control flow and error handling</a></li>
-                <li class="nav-link"><a class="test" href=#>Loops and iterations</a></li>
-                <li class="nav-link"><a class="test" href=#>Functions</a></li>
-                <li class="nav-link"><a class="test" href=#>Expressions and operators</a></li>
-                <li class="nav-link"><a class="test" href=#>Numbers and dates</a></li>
-                <li class="nav-link"><a class="test" href=#>Text formatting</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Introduction>Introduction</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Grammer_and_types>Grammer and types</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Control_flow_and_error_handling>Control flow and error handling</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Loops_and_iterations>Loops and iterations</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Functions>Functions</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Expressions_and_operators>Expressions and operators</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Numbers_and_dates>Numbers and dates</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Text_formatting>Text formatting</a></li>
             </ul>
         </nav>
     
         <main id="main-doc">
-            <section class="main-section">
+            <section id="Introduction" class="main-section">
                 <header>
                     <h2>Introduction</h2>
                 </header> 
@@ -43,7 +44,7 @@
                 <p>This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.</p>
             </section>
     
-            <section class="main-section">
+            <section id="Grammer_and_types" class="main-section">
                 <header>
                     <h2>Grammer and types</h2>
                 </header>
@@ -65,42 +66,58 @@
                 <p>The source text of JavaScript script gets scanned from left to right and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments, or whitespace. Spaces, tabs, and newline characters are considered whitespace.</p>
             </section>
     
-            <section class="main-section">
+            <section id="Control_flow_and_error_handling" class="main-section">
                 <header>
                     <h2>Control flow and error handling</h2>
                 </header>
+
+                <p>JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application. This chapter provides an overview of these statements.</p>
+
+                <h4>Block statement</h4>
+
+                <p>The most basic statement is a block statement that is used to group statements. The block is delimited by a pair of curly brackets:</p>
+                <code>
+{
+    statement_1;
+    statement_2;
+    .
+    .
+    .
+    statement_n;
+}
+                </code>
             </section>
     
-            <section class="main-section">
+            <section id="Loops_and_iterations" class="main-section">
                 <header>
                     <h2>Loops and iterations</h2>
                 </header>
             </section>
     
-            <section class="main-section">
+            <section id="Functions" class="main-section">
                 <header>
                     <h2>Functions</h2>
                 </header>
             </section>
     
-            <section class="main-section">
+            <section id="Expressions_and_operators" class="main-section">
                 <header>
                     <h2>Expressions and operators</h2>
                 </header>
             </section>
     
-            <section class="main-section">
+            <section id="Numbers_and_dates" class="main-section">
                 <header>
                     <h2>Numbers and dates</h2>
                 </header>
             </section>
     
-            <section class="main-section">
+            <section id="Text_formatting" class="main-section">
                 <header>
                     <h2>Text formatting</h2>
                 </header>
             </section>
-    
+
         </main>
         
     </div>

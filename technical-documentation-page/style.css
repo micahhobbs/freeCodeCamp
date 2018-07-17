@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#nav-bar {
+#navbar {
   position: fixed;
   height: 100%;
   width: 290px;
@@ -25,13 +25,10 @@ body {
   font-size: 2em;
   text-align: center;
   margin: 20px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   color: white;
 }
 
-.nav-link {
+.nav-list {
   list-style: none;
   padding: 10px 30px;
   border: 1px solid darkgray;
@@ -39,12 +36,10 @@ body {
   border-bottom-width: 0px;
 }
 
-.test {
+.nav-link {
   text-decoration: none; 
   color: #ffc600;
 }
-
-
 
 nav ul {
   padding-left: 0px;
@@ -55,19 +50,25 @@ nav ul {
 }
 
 code {
-  background: lightgray;
+  display: block;
+  text-align: left;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border-left: 5px solid #3f87a6
 }
 
 #main-doc {
   padding: 1px 50px 10px 50px;
 }
 
-
-
 /* Media queries */
 
 @media screen and (max-width: 800px) {
-  #nav-bar {
+  #navbar {
     position: absolute;
     top: 0;
     padding: 0;
