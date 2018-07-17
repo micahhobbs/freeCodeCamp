@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+  }
+ 
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav-bar {
+    width: 100%;
+    height: 100px;
+    background-color: #01161E;
+    position: fixed;
+}
+
+nav a {
+    display: block;
+    float: right;
+    color: #EFF6E0;
+    text-decoration: none;
+}
+
+nav a:hover{
+
+}
+
+#logo {
+    font-size: 3em;
+    display: block;
+    float: left;
+}
+
+
+#welcome-section {
+    height: 780px;
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #124559;
+    color: #EFF6E0
+}
+
+#projects {
+    display: grid;
+
+}
+
+.project-img {
+    width: 10%;
+    height: 20%;
+}
+
+#contact {
+    display: grid;
+}
+
+.contact-tile {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #01161E;
+    color: #EFF6E0
+}
