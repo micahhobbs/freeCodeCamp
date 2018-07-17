@@ -139,7 +139,7 @@ iframe {
 Feature section
 */
 
-.prod-features {
+#features {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -212,7 +212,7 @@ Pricing section
 }
 
 
-.pricing {
+#pricing {
     max-width: 850px;
     margin: 0 auto;
     padding: 5px 0;
@@ -248,7 +248,7 @@ Pricing section
 Contact section
 */
 
-.contact {
+#contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -394,7 +394,7 @@ footer {
         transform: scale(1.025);
     }
 
-    .prod-features {
+    #features {
         flex-direction: column;
         margin-bottom: 0;
     }
