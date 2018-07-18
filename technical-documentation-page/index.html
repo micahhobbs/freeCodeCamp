@@ -19,7 +19,7 @@
                 <li class="nav-list"><a class="nav-link" href=#Control_flow_and_error_handling>Control flow and error handling</a></li>
                 <li class="nav-list"><a class="nav-link" href=#Loops_and_iterations>Loops and iterations</a></li>
                 <li class="nav-list"><a class="nav-link" href=#Functions>Functions</a></li>
-                <li class="nav-list"><a class="nav-link" href=#Expressions_and_operators>Expressions and operators</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Operators>Operators</a></li>
                 <li class="nav-list"><a class="nav-link" href=#Numbers_and_dates>Numbers and dates</a></li>
                 <li class="nav-list"><a class="nav-link" href=#Text_formatting>Text formatting</a></li>
             </ul>
@@ -49,7 +49,7 @@
                     <h2>Grammer and types</h2>
                 </header>
                 
-                <h4>Basics</h4>
+                <h3>Basics</h3>
                 
                 <p>JavaScript borrows most of its syntax from Java, but is also influenced by Awk, Perl and Python.</p>
     
@@ -73,52 +73,144 @@
 
                 <p>JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application. This chapter provides an overview of these statements.</p>
 
-                <h4>Block statement</h4>
+                <h3>Block statement</h3>
 
                 <p>The most basic statement is a block statement that is used to group statements. The block is delimited by a pair of curly brackets:</p>
-                <code>
-{
+                
+                <!-- Not sure why this is happening exactly-->
+                <!-- Something to do with the white-space: pre-wrap css elements -->
+                
+<code>{
     statement_1;
     statement_2;
     .
     .
     .
     statement_n;
-}
-                </code>
+}</code>
+
+                <p>Block statements are commonly used with control flow statements (e.g. if, for, while).</p>
             </section>
     
             <section id="Loops_and_iterations" class="main-section">
                 <header>
                     <h2>Loops and iterations</h2>
                 </header>
+
+                <h3>Loops offer a quick and easy way to do something repeatedly. This chapter of the JavaScript Guide introduces the different iteration statements available to JavaScript.</h3>
+
+                <p>You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction then Y steps in another; for example, the idea "Go five steps to the east" could be expressed this way as a loop:</p>
+
+
+<code>var step;
+for (step = 0; step < 5; step++) {
+    // Runs 5 times, with values of step 0 through 4.
+    console.log('Walking east one step');
+}</code>
+
+                <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times (and it's actually possible that number could be zero). The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.</p>
+                
             </section>
     
             <section id="Functions" class="main-section">
                 <header>
                     <h2>Functions</h2>
                 </header>
+
+                <h3>Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.</h3>
+
+                <h4>Defining functions</h4>
+
+                <p>A function definition (also called a function declaration, or function statement) consists of the function keyword,  followed by:</p>
+
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                </ul>
+
+                <p>For example, the following code defines a simple function named square:</p>
+
+<code>function square(number) {
+    return number * number;
+}</code>
+
+                <p>The function square takes one parameter, called number. The function consists of one statement that says to return the parameter of the function (that is, number) multiplied by itself. The statement return specifies the value returned by the function.</p>
+
+                <code>return number * number;</code>
             </section>
     
-            <section id="Expressions_and_operators" class="main-section">
+            <section id="Operators" class="main-section">
                 <header>
-                    <h2>Expressions and operators</h2>
+                    <h2>Operators</h2>
                 </header>
+                <h3>Operators</h3>
+
+                <p>JavaScript has the following types of operators. This section describes the operators and contains information about operator precedence.</p>
+
+                <ul>
+                    <li>Assignment operators</li>
+                    <li>Comparison operators</li>
+                    <li>Arithmetic operators</li>
+                    <li>Bitwise operators</li>
+                    <li>Logical operators</li>
+                    <li>String operators</li>
+                    <li>Conditional (ternary) operator</li>
+                    <li>Comma operator</li>
+                    <li>Unary operators</li>
+                    <li>Relational operators</li>
+                </ul>
             </section>
     
             <section id="Numbers_and_dates" class="main-section">
                 <header>
                     <h2>Numbers and dates</h2>
                 </header>
+
+                <h3>Numbers</h3>
+
+                <p>In JavaScript, all numbers are implemented in double-precision 64-bit binary format IEEE 754 (i.e. a number between -(253 -1) and 253 -1). There is no specific type for integers. In addition to being able to represent floating-point numbers, the number type has three symbolic values: +Infinity, -Infinity, and NaN (not-a-number). See also JavaScript data types and structures for context with other primitive types in JavaScript.</p>
+
+                <p>You can use four types of number literals: decimal, binary, octal, and hexadecimal.</p>
+
+                <h4><span>Decimals</span></h4>
+<code>1234567890
+42
+
+// Caution when using leading zeros:
+
+0888 // 888 parsed as decimal
+0777 // parsed as octal in non-strict mode (511 in decimal)</code>
             </section>
     
             <section id="Text_formatting" class="main-section">
                 <header>
                     <h2>Text formatting</h2>
                 </header>
+                
+                <h3>Strings</h3>
+                <p>JavaScript's String type is used to represent textual data. It is a set of "elements" of 16-bit unsigned integer values  (UTF-16 code units). Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in it. You can create strings using string literals or string objects.</p>
+
+                <h4><span>String literals</span></h4>
+
+                <p>You can create simple strings using either single or double quotes:</p>
+
+<code>'foo'
+"bar"
+</code>
             </section>
 
+
+            <h2>Source</h2>
+            <ul>
+                <li>All the documentation on this page is take from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting">MDN</a></li>
+            </ul>
+
         </main>
+
+        <footer>
+            <p class="sign-off">Made with ❤️ by MTH</p>
+        </footer>
         
     </div>
    

@@ -7,6 +7,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 #navbar {
@@ -49,20 +50,55 @@ nav ul {
   margin-left: 290px;
 }
 
+h2 {
+  border-top: 3px solid #3f87a6;
+  border-bottom: 3px solid #3f87a6; 
+  padding: 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 span {
+  background-color: black;
+  color: white;
+  padding-left: 25px;
+  padding-right 3px;
+}
+
 code {
   display: block;
   text-align: left;
   white-space: pre-wrap;
   line-height: 1.5;
   background-color: #f7f7f7;
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   border-radius: 5px;
   border-left: 5px solid #3f87a6
 }
 
+.inline-code {
+  /* all: unset; */
+  display: inline;
+  background-color: #f7f7f7;
+  border-left: none;
+}
+
 #main-doc {
   padding: 1px 50px 10px 50px;
+}
+
+footer {
+  height: 70px;
+  background-color: #01161E;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-off {
+  padding-left: 270px;
 }
 
 /* Media queries */
@@ -86,4 +122,13 @@ code {
     margin-left: 0;
     margin-top: 250px;
   } 
+
+  footer {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .sign-off {
+    all: unset;
+  }
 }
