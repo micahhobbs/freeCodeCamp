@@ -51,39 +51,43 @@ body {
     background-color: #598392;
     margin: 0;
     padding: 0;
-    height: 90vh;
+    height: auto;
     justify-content: space-evenly;
     flex-flow: row wrap;
 }
 
 .project-tile {
-    border: 1px solid black;
-    width: 400px;
-    height: 300px;
-    padding: 10px;
-    margin-top: 50px;
+    border: 1px solid #124559;
+    /* width: 300px;
+    height: 350px; */
+    margin: 50px;
     text-align: center;
 }
 
 .project-img {
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 175px;
+}
+
+.project-title {
+    border-top: 3px solid #124559;
+    border-bottom: 3px solid #124559;
+    padding: 5px;
 }
 
 #contact {
     display: flex;
+    flex-flow: row wrap;
     background-color: #aec3b0;
-    padding-top: 50px;
-}
-
-.contact-tile {
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    border-radius: 50%;
+    justify-content: space-evenly;
 }
 
 
+.contact-svg {
+    height: 120px;
+    width: 120px;
+    margin: 50px;
+}
 
 footer {
     display: flex;
