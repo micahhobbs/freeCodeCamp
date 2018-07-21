@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>freeCodeCamp Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="title">Mike's Strength & Conditioning Survey</h1>
+        <p id="description">Help us improve our services and training facilities</p>
+        
+        <form id="survey-form">
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="name" id="name-label">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                </div>
+             </div>  
+
+             <div class="rowTab">
+                <div class="labels">
+                    <label for="email" id="email-label">* Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+                </div>
+            </div>  
+
+            <!-- Dropdown menu -->
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="number" id="number-label">* Age: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" class="input-field" placeholder="Age" min="1" max="100" required>
+                </div>
+            </div>  
+
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="dropdown">Whats your favourite exercise?</label>
+                </div>
+                <div class="rightTab">
+                    <select name="fav-exercise" id="dropdown">
+                        <option value="squat">Squat</option>
+                        <option value="bench">Bench</option>
+                        <option value="deadlift">Deadlift</option>
+                    </select>
+                </div>
+            </div>  
+
+            <!-- Radio button section -->
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="train-time">When do you train?</label>
+                </div>
+                <div class="rightTab">
+                    <ul>
+                        <li class="radio">
+                            <label>
+                                Morning
+                                <input type="radio" name="train-time" value="morning" class="train-time">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                During the day
+                                <input type="radio" name="train-time" value="day" class="train-time">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Evening
+                                <input type="radio" name="train-time" value="evening" class="train-time">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+
+
+            <!-- Checkbox section -->
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="equipment">
+                        What other equipment would you like to see in the gym? (Check all that apply)
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="equipment">
+                        <li class="checkbox">
+                            <label>
+                                <input type="checkbox" name="equipment" value="GHD" class="equip-pref">Glute Ham Developer
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input type="checkbox" name="equipment" value="hyper-extension" class="equip-pref">Hyper Extension
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label>
+                                <input type="checkbox" name="equipment" value="belt-squat" class="equip-pref">Belt Squat
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comment">Any other comments?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea cols="40" rows="5" name="comment" id="comment" class="input-field"></textarea>
+                </div>
+            </div>  
+
+            <div class="rowTab">
+                <button type="submit" id="submit">SUBMIT</button>
+            </div>
+       
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+* {
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#main {
+    margin: 20px auto;
+    max-width: 700px;
+    width: 70%;
+    background-color: gainsboro;
+    box-shadow: 7px 10px 0px 0px rgba(0,0,0,0.52);
+}
+
+#title {
+    font-size: 60px;
+    text-align: center;
+    color: steelblue;
+    text-transform: uppercase;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#img-caption {
+    text-align: center;
+}
+
+#tribute-info {
+    padding: 0px 20px 20px 20px;
+}
+
+h2 {
+    margin-bottom: 0px;
+    color: steelblue;
+}
+
+h2 + p {
+    margin-top: 3px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+a:visited {
+    color: black;
+    text-transform: none;
+}
+
+a:hover {
+    background: steelblue;
+}
+

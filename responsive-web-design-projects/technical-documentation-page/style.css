@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  width: 290px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);;
+  border-right: 2px solid lightgray;
+}
+
+.topic-title {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 10px 30px;
+  border: 1px solid darkgray;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}
+
+.nav-link {
+  text-decoration: none; 
+  color: #ffc600;
+}
+
+nav ul {
+  padding-left: 0px;
+}
+
+#main-doc {
+  margin-left: 290px;
+}
+
+h2 {
+  border-top: 3px solid #3f87a6;
+  border-bottom: 3px solid #3f87a6; 
+  padding: 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 span {
+  background-color: black;
+  color: white;
+  padding-left: 25px;
+  padding-right 3px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border-left: 5px solid #3f87a6
+}
+
+.inline-code {
+  /* all: unset; */
+  display: inline;
+  background-color: #f7f7f7;
+  border-left: none;
+}
+
+#main-doc {
+  padding: 1px 50px 10px 50px;
+}
+
+footer {
+  height: 70px;
+  background-color: #01161E;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-off {
+  padding-left: 270px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 251px;
+    overflow: auto;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    margin-top: 250px;
+  } 
+
+  footer {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .sign-off {
+    all: unset;
+  }
+}

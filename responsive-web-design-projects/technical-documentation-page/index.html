@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header class="topic-title">JavaScipt Guide</header>
+            <ul>
+                <li class="nav-list"><a class="nav-link" href=#Introduction>Introduction</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Grammer_and_types>Grammer and types</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Control_flow_and_error_handling>Control flow and error handling</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Loops_and_iterations>Loops and iterations</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Functions>Functions</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Operators>Operators</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Numbers_and_dates>Numbers and dates</a></li>
+                <li class="nav-list"><a class="nav-link" href=#Text_formatting>Text formatting</a></li>
+            </ul>
+        </nav>
+    
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>
+                    <h2>Introduction</h2>
+                </header> 
+                
+                <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.x. having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of javascript such as Node.Js which allow you to add more functionality to a website than simply downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+    
+                <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+    
+                <ul>
+                    <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+                    
+                    <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+                </ul>
+                
+                <p>This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.</p>
+            </section>
+    
+            <section id="Grammer_and_types" class="main-section">
+                <header>
+                    <h2>Grammer and types</h2>
+                </header>
+                
+                <h3>Basics</h3>
+                
+                <p>JavaScript borrows most of its syntax from Java, but is also influenced by Awk, Perl and Python.</p>
+    
+                <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
+                
+                <code>var Früh = "foobar";</code>
+                
+                <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
+               
+                <p>In JavaScript, instructions are called statements and are separated semicolons (;).</p>
+    
+                <p>A semicolon is not necessary after a statement if it is written on its own line. But if more than one statement on a line is desired, then they must be separated by semicolons. ECMAScript also has rules for automatic insertion of semicolons (ASI) to end statements. (For more information, see the detailed reference about JavaScript's lexical grammar.) Iit is considered best practice, however, to always write a semicolon after a statement, even when it is not strictly needed. This practice reduces the chances of bugs getting into the code.</p>
+    
+                <p>The source text of JavaScript script gets scanned from left to right and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments, or whitespace. Spaces, tabs, and newline characters are considered whitespace.</p>
+            </section>
+    
+            <section id="Control_flow_and_error_handling" class="main-section">
+                <header>
+                    <h2>Control flow and error handling</h2>
+                </header>
+
+                <p>JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application. This chapter provides an overview of these statements.</p>
+
+                <h3>Block statement</h3>
+
+                <p>The most basic statement is a block statement that is used to group statements. The block is delimited by a pair of curly brackets:</p>
+                
+                <!-- Not sure why this is happening exactly-->
+                <!-- Something to do with the white-space: pre-wrap css elements -->
+                
+<code>{
+    statement_1;
+    statement_2;
+    .
+    .
+    .
+    statement_n;
+}</code>
+
+                <p>Block statements are commonly used with control flow statements (e.g. if, for, while).</p>
+            </section>
+    
+            <section id="Loops_and_iterations" class="main-section">
+                <header>
+                    <h2>Loops and iterations</h2>
+                </header>
+
+                <h3>Loops offer a quick and easy way to do something repeatedly. This chapter of the JavaScript Guide introduces the different iteration statements available to JavaScript.</h3>
+
+                <p>You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction then Y steps in another; for example, the idea "Go five steps to the east" could be expressed this way as a loop:</p>
+
+
+<code>var step;
+for (step = 0; step < 5; step++) {
+    // Runs 5 times, with values of step 0 through 4.
+    console.log('Walking east one step');
+}</code>
+
+                <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times (and it's actually possible that number could be zero). The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.</p>
+                
+            </section>
+    
+            <section id="Functions" class="main-section">
+                <header>
+                    <h2>Functions</h2>
+                </header>
+
+                <h3>Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.</h3>
+
+                <h4>Defining functions</h4>
+
+                <p>A function definition (also called a function declaration, or function statement) consists of the function keyword,  followed by:</p>
+
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                </ul>
+
+                <p>For example, the following code defines a simple function named square:</p>
+
+<code>function square(number) {
+    return number * number;
+}</code>
+
+                <p>The function square takes one parameter, called number. The function consists of one statement that says to return the parameter of the function (that is, number) multiplied by itself. The statement return specifies the value returned by the function.</p>
+
+                <code>return number * number;</code>
+            </section>
+    
+            <section id="Operators" class="main-section">
+                <header>
+                    <h2>Operators</h2>
+                </header>
+                <h3>Operators</h3>
+
+                <p>JavaScript has the following types of operators. This section describes the operators and contains information about operator precedence.</p>
+
+                <ul>
+                    <li>Assignment operators</li>
+                    <li>Comparison operators</li>
+                    <li>Arithmetic operators</li>
+                    <li>Bitwise operators</li>
+                    <li>Logical operators</li>
+                    <li>String operators</li>
+                    <li>Conditional (ternary) operator</li>
+                    <li>Comma operator</li>
+                    <li>Unary operators</li>
+                    <li>Relational operators</li>
+                </ul>
+            </section>
+    
+            <section id="Numbers_and_dates" class="main-section">
+                <header>
+                    <h2>Numbers and dates</h2>
+                </header>
+
+                <h3>Numbers</h3>
+
+                <p>In JavaScript, all numbers are implemented in double-precision 64-bit binary format IEEE 754 (i.e. a number between -(253 -1) and 253 -1). There is no specific type for integers. In addition to being able to represent floating-point numbers, the number type has three symbolic values: +Infinity, -Infinity, and NaN (not-a-number). See also JavaScript data types and structures for context with other primitive types in JavaScript.</p>
+
+                <p>You can use four types of number literals: decimal, binary, octal, and hexadecimal.</p>
+
+                <h4><span>Decimals</span></h4>
+<code>1234567890
+42
+
+// Caution when using leading zeros:
+
+0888 // 888 parsed as decimal
+0777 // parsed as octal in non-strict mode (511 in decimal)</code>
+            </section>
+    
+            <section id="Text_formatting" class="main-section">
+                <header>
+                    <h2>Text formatting</h2>
+                </header>
+                
+                <h3>Strings</h3>
+                <p>JavaScript's String type is used to represent textual data. It is a set of "elements" of 16-bit unsigned integer values  (UTF-16 code units). Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in it. You can create strings using string literals or string objects.</p>
+
+                <h4><span>String literals</span></h4>
+
+                <p>You can create simple strings using either single or double quotes:</p>
+
+<code>'foo'
+"bar"
+</code>
+            </section>
+
+
+            <h2>Source</h2>
+            <ul>
+                <li>All the documentation on this page is take from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting">MDN</a></li>
+            </ul>
+
+        </main>
+
+        <footer>
+            <p class="sign-off">Made with ❤️ by MTH</p>
+        </footer>
+        
+    </div>
+   
+</body>
+</html>
