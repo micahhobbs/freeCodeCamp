@@ -1,41 +1,41 @@
-html {
+html, body {
     box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
   }
  
 *, *:before, *:after {
     box-sizing: inherit;
   }
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-#nav-bar {
+#navbar {
     width: 100%;
     background-color: #01161E;
     position: fixed;
 }
 
-#nav-bar ul {
+#navbar ul {
     display: flex;
     list-style: none;
     text-align: center;
     padding: 10px;
 }
 
-#nav-bar li {
+#navbar li {
     flex: 1;
 }
 
-#nav-bar li a {
-    color: white;
+#navbar li a {
+    color: #EFF6E0;
     text-decoration: none;
     font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 #welcome-section {
-    height: 780px;
+    height: 100vmin;
     display: flex;;
     align-items: center;
     justify-content: center;
@@ -43,8 +43,6 @@ body {
     background-color: #124559;
     color: #EFF6E0
 }
-
-
 
 #projects {
     display: flex;
@@ -56,23 +54,41 @@ body {
     flex-flow: row wrap;
 }
 
-.project-tile {
-    border: 1px solid #124559;
-    /* width: 300px;
-    height: 350px; */
-    margin: 50px;
+.project-header-section {
+    display: block;
     text-align: center;
 }
 
+.project-tile {
+    width: 300px;
+    margin: 50px;
+    text-align: center;  
+    background-color: #01161E;
+    color: #EFF6E0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
 .project-img {
-    width: 175px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 300px;
     height: 175px;
 }
 
 .project-title {
-    border-top: 3px solid #124559;
-    border-bottom: 3px solid #124559;
     padding: 5px;
+    font-size: 1.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.project-description {
+    padding: 5px;
+}
+
+#projects a:link {
+    text-decoration: none;
 }
 
 #contact {
@@ -86,7 +102,7 @@ body {
 .contact-svg {
     height: 120px;
     width: 120px;
-    margin: 50px;
+    margin: 100px;
 }
 
 footer {
@@ -97,4 +113,20 @@ footer {
     height: 100px;
     background-color: #01161E;
     color: #EFF6E0
+}
+
+.footer-content {
+    text-align: center; 
+    display: block;
+}
+
+.footer-content a:link, .footer-content a:visited  {
+    text-decoration: underline;
+    color: #EFF6E0;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar li a {
+        font-size: 1.25em;
+    }
 }
