@@ -14,7 +14,7 @@ freeCodeCamp offers several developer certifications. Each of these certificatio
 
 #### Projects: 
 * Tribute Page
- * [Demo]() [Repo]()
+    * [[Demo]]() [[Repo]]()
 * Survey Form
 * Product Landing Page
 * Technical Documentation Page
